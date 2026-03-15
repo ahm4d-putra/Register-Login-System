@@ -1,6 +1,3 @@
-Tentu, ini file `readme.md` yang lengkap untuk proyekmu. Tinggal copy paste ke file `readme.md` di root folder proyek.
-
-### readme.md
 
 ```markdown
 # User Registration System with Email Verification
@@ -18,40 +15,6 @@ A fullstack web application built with **Node.js, Express, HTML, CSS, and Vanill
 - **Modern UI**: Dark theme with Glassmorphism design, smooth animations, and responsive layout.
 - **Form Validation**: Client-side validation (email format, password strength, required fields).
 - **JSON Database**: Lightweight data storage using the file system (no external DB required).
-
----
-
-## 📂 Project Structure
-
-```
-/project
-├── server.js                 # Main server entry point
-├── package.json              # Project dependencies
-├── readme.md                 # Project documentation
-│
-├── /routes
-│   └── auth.js               # API route definitions
-│
-├── /controllers
-│   └── authController.js     # Business logic (register, login, verify)
-│
-├── /utils
-│   └── mailer.js             # Email sending configuration
-│
-├── /database
-│   └── users.json            # JSON file acting as database
-│
-├── /views                    # HTML Pages
-│   ├── register.html
-│   ├── login.html
-│   └── verified.html
-│
-└── /public                   # Static Assets
-    ├── /css
-    │   └── style.css
-    └── /js
-        └── script.js
-```
 
 ---
 
