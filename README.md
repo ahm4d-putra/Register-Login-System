@@ -1,6 +1,6 @@
 
 ```markdown
-# User Registration System with Email Verification
+User Registration System with Email Verification
 
 A fullstack web application built with **Node.js, Express, HTML, CSS, and Vanilla JavaScript**. This project implements a secure user registration system featuring email verification, password hashing, and a modern glassmorphism UI.
 
@@ -8,7 +8,7 @@ A fullstack web application built with **Node.js, Express, HTML, CSS, and Vanill
 
 ---
 
-## ✨ Key Features
+✨ Key Features
 
 - **Secure Authentication**: Passwords hashed using `bcrypt`.
 - **Email Verification**: Token-based verification using `UUID` and `Nodemailer`.
@@ -18,7 +18,7 @@ A fullstack web application built with **Node.js, Express, HTML, CSS, and Vanill
 
 ---
 
-## 🛠️ Installation & Setup
+🛠️ Installation & Setup
 
 Follow these steps to get the project running on your local machine.
 
