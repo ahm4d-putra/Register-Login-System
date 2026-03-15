@@ -7,11 +7,11 @@ A fullstack web application built with **Node.js, Express, HTML, CSS, and Vanill
 
 ✨ Key Features
 
-- **Secure Authentication**: Passwords hashed using `bcrypt`.
-- **Email Verification**: Token-based verification using `UUID` and `Nodemailer`.
-- **Modern UI**: Dark theme with Glassmorphism design, smooth animations, and responsive layout.
-- **Form Validation**: Client-side validation (email format, password strength, required fields).
-- **JSON Database**: Lightweight data storage using the file system (no external DB required).
+- Secure Authentication**: Passwords hashed using `bcrypt`.
+- Email Verification**: Token-based verification using `UUID` and `Nodemailer`.
+- Modern UI**: Dark theme with Glassmorphism design, smooth animations, and responsive layout.
+- Form Validation**: Client-side validation (email format, password strength, required fields).
+- JSON Database**: Lightweight data storage using the file system (no external DB required).
 
 ---
 
@@ -25,7 +25,7 @@ Follow these steps to get the project running on your local machine.
 
 2. Clone or Download
 If you have the files ready, navigate to the project directory:
-```bash
+
 cd C:\coded\email-sender
 ```
 
@@ -38,8 +38,8 @@ npm install
 4. Configure Email Settings (CRITICAL)
 Open `utils/mailer.js`. You have two options:
 
-#### Option A: Gmail (Recommended for Production)
-You **cannot** use your regular Gmail password. You must generate an **App Password**.
+Option A: Gmail (Recommended for Production)
+You cannot use your regular Gmail password. You must generate an **App Password**.
 1. Go to your [Google Account Security settings](https://myaccount.google.com/security).
 2. Enable **2-Step Verification** if not already active.
 3. Search for **"App Passwords"** and create a new one (name it "NodeProject").
