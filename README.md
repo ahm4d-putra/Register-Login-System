@@ -32,11 +32,11 @@ If you have the files ready, navigate to the project directory:
 cd C:\coded\email-sender
 ```
 
-### 3. Install Dependencies
+3. Install Dependencies
 Install all required packages defined in `package.json`:
-```bash
+
 npm install
-```
+
 
 ### 4. Configure Email Settings (CRITICAL)
 Open `utils/mailer.js`. You have two options:
@@ -59,7 +59,7 @@ const EMAIL_CONFIG = {
 };
 ```
 
-#### Option B: Ethereal (Recommended for Testing)
+Option B: Ethereal (Recommended for Testing)
 If you don't want to use a real email:
 1. Go to [Ethereal Email](https://ethereal.email/).
 2. Create a free account to get test credentials.
@@ -83,33 +83,33 @@ http://localhost:3000
 
 ## 🧪 How to Test the Flow
 
-### 1. Register a New User
+1. Register a New User
 - Go to `http://localhost:3000`.
 - Fill in the form (Username, Email, Password).
 - Click "Create Account".
 - You should see a "Check Your Email" message.
 
-### 2. Verify Email
+2. Verify Email
 **If using Gmail:**
 - Open your email inbox.
 - Click the verification link in the email.
 - You will be redirected to the "Email Verified Successfully" page.
 
-**If Email fails (Manual Verification):**
+If Email fails (Manual Verification):
 - Open `database/users.json`.
 - Find your user entry.
 - Change `"verified": false` to `"verified": true`.
 - Save the file.
 - Now you can login.
 
-### 3. Login
+3. Login
 - Go to the Login page.
 - Enter your credentials.
 - If verified, you will see a "Login Successful" message.
 
 ---
 
-## 🔌 API Endpoints Reference
+🔌 API Endpoints Reference
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -117,9 +117,9 @@ http://localhost:3000
 | `POST` | `/api/auth/login` | Authenticates user (only if verified). |
 | `GET` | `/api/auth/verify?token=...` | Verifies user email via token. |
 
-### Request Body Examples
+Request Body Examples
 
-**Register:**
+Register:
 ```json
 {
   "username": "johndoe",
@@ -128,7 +128,7 @@ http://localhost:3000
 }
 ```
 
-**Login:**
+Login:
 ```json
 {
   "email": "john@example.com",
@@ -136,20 +136,6 @@ http://localhost:3000
 }
 ```
 
----
-
-## ❓ Troubleshooting
-
-**Q: I get "Invalid login: 535-5.7.8 Username and Password not accepted"**
-A: You are using your normal Gmail password. You must generate an **App Password** in your Google Account settings (see Configuration step 4).
-
-**Q: Where is my data stored?**
-A: All user data is stored in `/database/users.json`. You can view or edit it manually with any text editor.
-
-**Q: Email is not sending, but no error appears.**
-A: Check your console logs. If using Ethereal, the console will log a "Preview URL" where you can view the email sent.
-
----
 
 ## 📜 License
 
