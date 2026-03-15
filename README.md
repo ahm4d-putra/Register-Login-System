@@ -3,9 +3,6 @@
 User Registration System with Email Verification
 
 A fullstack web application built with **Node.js, Express, HTML, CSS, and Vanilla JavaScript**. This project implements a secure user registration system featuring email verification, password hashing, and a modern glassmorphism UI.
-
-![Project Preview](https://img.shields.io/badge/Status-Complete-brightgreen) ![Node](https://img.shields.io/badge/Node.js-18%2B-green) ![License](https://img.shields.io/badge/License-MIT-blue)
-
 ---
 
 ✨ Key Features
@@ -22,11 +19,11 @@ A fullstack web application built with **Node.js, Express, HTML, CSS, and Vanill
 
 Follow these steps to get the project running on your local machine.
 
-### 1. Prerequisites
+1. Prerequisites
 - [Node.js](https://nodejs.org/) (v14 or higher recommended)
 - A Gmail account (or Mailtrap/Ethereal for testing)
 
-### 2. Clone or Download
+2. Clone or Download
 If you have the files ready, navigate to the project directory:
 ```bash
 cd C:\coded\email-sender
@@ -38,7 +35,7 @@ Install all required packages defined in `package.json`:
 npm install
 
 
-### 4. Configure Email Settings (CRITICAL)
+4. Configure Email Settings (CRITICAL)
 Open `utils/mailer.js`. You have two options:
 
 #### Option A: Gmail (Recommended for Production)
@@ -67,7 +64,7 @@ If you don't want to use a real email:
 
 ---
 
-## 🚀 Running the Server
+🚀 Running the Server
 
 Start the server with:
 ```bash
@@ -81,7 +78,7 @@ http://localhost:3000
 
 ---
 
-## 🧪 How to Test the Flow
+🧪 How to Test the Flow
 
 1. Register a New User
 - Go to `http://localhost:3000`.
